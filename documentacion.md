@@ -6,10 +6,10 @@ Este documento registra el flujo de trabajo realizado con **Git y GitHub**, incl
 
 ## 🔹 1. Ramas creadas y responsables
 
-- **main** → Rama principal del repositorio. Responsable: *Administrador del repo*  
-- **feature/recetas-italianas** → Recetas de Italia. Responsable: *[Fabian]*  
-- **feature/recetas-colombianas** → Recetas de Colombia. Responsable: *[Breider]*  
-- **feature/recetas-mexicanas** → Recetas de México. Responsable: *[Breider]*  
+- **main** → Rama principal del repositorio. Responsable: *Administrador del repo [Fabian(zXpect)]*  
+- **feature/recetas-italianas** → Recetas de Italia. Responsable: *[Fabian(zXpect)]*  
+- **feature/recetas-colombianas** → Recetas de Colombia. Responsable: *[Breider(Car0nte092)]*  
+- **feature/recetas-mexicanas** → Recetas de México. Responsable: *[Breider(Car0nte092)]*  
 
 ---
 
@@ -19,7 +19,7 @@ Este documento registra el flujo de trabajo realizado con **Git y GitHub**, incl
 ```bash
 git checkout -b feature/recetas-italianas
 ```
-![Checkout branch](img/checkout.png)
+![Checkout branch](gestor-recetas/docs/img/checkout.png)
 
 ---
 
@@ -37,14 +37,12 @@ git commit -m "Agrego notas y recomendaciones adicionales en recetas italianas"
 ```bash
 git status
 git log
-git lg   # (intentado, pero no válido)
 ```
 ---
 
 ### 📌 Configuración de usuario
 ```bash
 git config --global user.name "zXpect"
-git config --global user.email "you@example.com"
 ```
 ---
 
@@ -52,16 +50,15 @@ git config --global user.email "you@example.com"
 ```bash
 git remote add origin https://github.com/zXpect/gestor-recetas.git
 ```
-![Configuración remoto](img/remote.png)
+![Configuración remoto](gestor-recetas/docs/img/remote.png)
 
 ---
 
 ### 📌 Subir rama al repositorio
 ```bash
-git push origin feature/recetas-italiana   # (error, rama mal escrita)
 git push -u origin feature/recetas-italianas
 ```
-![Push rama](img/push.png)
+![Push rama](gestor-recetas/docs/img/push.png)
 
 ---
 
@@ -96,7 +93,7 @@ git merge feature/recetas-italianas
 git add gestor-recetas/recetas/colombianas.md
 git commit -m "Resuelvo conflicto en colombianas.md unificando recetas de arepas"
 ```
-![Conflicto y resolución](img/conflicto-01.png)
+![Conflicto y resolución](gestor-recetas/docs/img/checkout.png)
 
 ---
 
